@@ -16,3 +16,30 @@
 2025-03-02 03:07:30,953 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
 2025-03-02 03:07:32,117 - INFO - PowerShell script executed successfully: 
 2025-03-02 03:12:46,314 - INFO - Monitoring stopped by user.
+2025-03-02 03:14:06,519 - INFO - Starting local user sync monitoring... CSV path: ..\input\users.csv
+2025-03-02 03:14:40,866 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:14:41,410 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
++                 Write-Log "Invalid action for $username: $action" "ER ...
++                                               ~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:55 char:37
++         Write-Log "Error processing $username: $_" "ERROR"
++                                     ~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+ 
+
+2025-03-02 03:14:41,411 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:14:41,777 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
++                 Write-Log "Invalid action for $username: $action" "ER ...
++                                               ~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:55 char:37
++         Write-Log "Error processing $username: $_" "ERROR"
++                                     ~~~~~~~~~~
+Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+ 
+
