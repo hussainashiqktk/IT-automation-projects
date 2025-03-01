@@ -1,8 +1,3 @@
 Username,Action,FullName,Password
-jdoe,CREATE,John Doe,Pass1234!
-asmith,MODIFY,Alice Smith,NewPass567
-bjones,DELETE,Bob Jones,
-bjones,DELETE,Bob Jones,
-bjones,DELETE,Bob Jones,
-jdoe,CREATE,John Doe,Pass1234!
-hussain,CREATE,HussainAshiq,huss23
+jdoe,DELETE,John Doe,
+hussain,DELETE,HussainAshiq,
