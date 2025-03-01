@@ -1,6 +1,3 @@
-Below is an updated version of the project tailored to your request: automating local user account creation, modification, and deletion on a Windows system (without Active Directory) or Linux, using a CSV file as input, with changes triggered immediately upon CSV updates. I’ve added comprehensive logging throughout the application. Since you don’t have AD, I’ll focus on local user management using PowerShell for Windows, with notes for Linux adaptation.
-
----
 
 ### 1. Project Overview
 This automation monitors a CSV file for changes and instantly creates, modifies, or deletes local user accounts on a Windows system based on the file’s contents, simulating a user management system without Active Directory. It’s perfect for standalone systems or small-scale IT setups where local accounts need quick, automated updates (e.g., lab computers or test environments). The tool eliminates manual user management tasks, ensuring real-time updates and logging all actions for auditing.
