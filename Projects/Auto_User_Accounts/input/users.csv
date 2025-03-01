@@ -3,3 +3,5 @@ jdoe,CREATE,John Doe,Pass1234!
 asmith,MODIFY,Alice Smith,NewPass567
 bjones,DELETE,Bob Jones,
 bjones,DELETE,Bob Jones,
+bjones,DELETE,Bob Jones,
+jdoe,CREATE,John Doe,Pass1234!
