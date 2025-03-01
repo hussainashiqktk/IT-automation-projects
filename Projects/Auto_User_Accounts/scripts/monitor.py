@@ -65,7 +65,7 @@ if __name__ == "__main__":
     observer.start()
     try:
         while True:
-            time.sleep(1)
+            time.sleep(30)
     except KeyboardInterrupt:
         logging.info("Monitoring stopped by user.")
         observer.stop()
