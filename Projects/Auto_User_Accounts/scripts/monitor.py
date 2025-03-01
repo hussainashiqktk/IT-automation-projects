@@ -11,9 +11,20 @@ log_dir = os.path.join(os.path.dirname(__file__), '..', 'logs')
 os.makedirs(log_dir, exist_ok=True)
 log_file = os.path.join(log_dir, 'user_sync.log')
 
-# Setup logging
-logging.basicConfig(filename=log_file, level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s', filemode='a')
+# Setup logging with dual handlers (file and console)
+logger = logging.getLogger()
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+# File handler
+file_handler = logging.FileHandler(log_file, mode='a')
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
+
+# Console handler
+console_handler = logging.StreamHandler()
+console_handler.setFormatter(formatter)
+logger.addHandler(console_handler)
 
 # Load and resolve config
 config = configparser.ConfigParser()
@@ -25,7 +36,8 @@ if not os.path.exists(config_path):
 config.read(config_path)
 try:
     relative_csv_path = config['SETTINGS']['csv_path']
-    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', relative_csv_path))
+    project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+    csv_path = os.path.abspath(os.path.join(project_root, relative_csv_path))
     logging.info(f"Resolved CSV path from '{relative_csv_path}' to: {csv_path}")
 except KeyError:
     logging.error("Config file missing [SETTINGS] section or 'csv_path' key")
@@ -65,7 +77,7 @@ if __name__ == "__main__":
     observer.start()
     try:
         while True:
-            time.sleep(30)
+            time.sleep(1)
     except KeyboardInterrupt:
         logging.info("Monitoring stopped by user.")
         observer.stop()
