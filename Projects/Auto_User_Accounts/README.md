@@ -211,5 +211,3 @@ This automation reduces local user management from minutes of manual CLI/GUI wor
 
 ### Linux Adaptation Notes
 For Linux, replace `main.ps1` with a Python script using `os.system()` to call `useradd`, `usermod`, and `userdel`. Example: `os.system(f"useradd -c '{fullName}' -m {username} -p $(openssl passwd -1 {password})")`. Update `monitor.py` to call this script instead. Logging remains consistent across platforms.
-
-This project is now fully functional for your local Windows system—no AD required—with robust logging. Test it out, and let me know if you need adjustments!
