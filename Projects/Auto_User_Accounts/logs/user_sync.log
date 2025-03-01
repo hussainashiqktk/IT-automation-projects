@@ -223,3 +223,449 @@
 2025-03-02 03:41:35,957 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2025-03-02 03:41:35,957 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
 2025-03-02 03:41:35,957 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:25,629 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:27,462 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:27,462 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:27,462 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:27,462 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:27,463 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:27,464 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:27,464 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:27,464 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:27,465 - INFO - PowerShell: INFO - Processing user: h with action:
+2025-03-02 03:42:27,465 - INFO - PowerShell: ERROR - Invalid action for h:
+2025-03-02 03:42:27,465 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:27,465 - INFO - PowerShell: Name Enabled Description
+2025-03-02 03:42:27,465 - INFO - PowerShell: ---- ------- -----------
+2025-03-02 03:42:27,466 - INFO - PowerShell: jdoe True
+2025-03-02 03:42:27,466 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:27,467 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:27,469 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:27,469 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:27,469 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:27,469 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:27,469 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:27,470 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:27,470 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:27,470 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:27,470 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:27,470 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:27,471 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:27,472 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:27,473 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:28,833 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:28,833 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:28,833 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:28,833 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:28,833 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:28,834 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:28,835 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:28,835 - INFO - PowerShell: INFO - Processing user: h with action:
+2025-03-02 03:42:28,835 - INFO - PowerShell: ERROR - Invalid action for h:
+2025-03-02 03:42:28,835 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:28,835 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:28,836 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:28,837 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:28,838 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:28,838 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:28,838 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:28,838 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:28,838 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:30,041 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:31,644 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:31,645 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:31,645 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:31,645 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:31,645 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:31,645 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:31,645 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:42:31,645 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:42:31,645 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:31,645 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:31,646 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:31,647 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:31,647 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:31,647 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:33,048 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:33,049 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:33,049 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:33,049 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:33,049 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:42:33,049 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:42:33,049 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:33,049 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:33,050 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:33,051 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:33,914 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:34,831 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:42:34,831 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:42:34,832 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:34,832 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:34,833 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:34,833 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:36,130 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:36,131 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:36,131 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:36,131 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:36,131 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:42:36,131 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:42:36,131 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:36,131 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:36,132 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:36,133 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:36,133 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:36,133 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:37,600 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:39,084 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:39,084 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:39,084 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:39,084 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:39,084 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:39,084 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:39,084 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:42:39,085 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:39,086 - INFO - PowerShell: Name    Enabled Description
+2025-03-02 03:42:39,086 - INFO - PowerShell: ----    ------- -----------
+2025-03-02 03:42:39,086 - INFO - PowerShell: hussain True
+2025-03-02 03:42:39,086 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:39,086 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:39,086 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:39,086 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:39,086 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:39,086 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:39,086 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:39,087 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:39,087 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:39,087 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:39,087 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:39,087 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:39,087 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:39,088 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:39,089 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:39,090 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:42:40,163 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:42:40,163 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:42:40,163 - INFO - PowerShell: INFO - Found 7 users in CSV
+2025-03-02 03:42:40,163 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:40,163 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:40,163 - INFO - PowerShell: INFO - Processing user: asmith with action: MODIFY
+2025-03-02 03:42:40,163 - INFO - PowerShell: INFO - Modified local user: asmith
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Processing user: bjones with action: DELETE
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Deleted local user: bjones
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Processing user: jdoe with action: CREATE
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Created local user: jdoe
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:42:40,164 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: Set-LocalUser : User asmith was not found.
+2025-03-02 03:42:40,164 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:11 char:9
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +         Set-LocalUser -Name $Username -FullName $FullName -Password $ ...
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (asmith:String) [Set-LocalUser], UserNotFoundException
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.SetLocalUserCommand
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: Remove-LocalUser : User bjones was not found.
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:40,165 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (bjones:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: New-LocalUser : User jdoe already exists.
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (jdoe:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: New-LocalUser : User hussain already exists.
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (hussain:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:42:40,166 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
