@@ -10,7 +10,7 @@ Here are some automation ideas that can make life easier in IT, cybersecurity, a
 4. **Automated Patch Management**: Create a system that automates the deployment of security patches and updates to servers and workstations.
 5. **IT Asset Management**: Develop a script that tracks and updates IT asset inventory, including hardware, software, and licenses.
 
-**Cybersecurity Automation**
+# **Cybersecurity Automation**
 
 1. **Vulnerability Scanning and Reporting**: Automate vulnerability scans using tools like Nessus or OpenVAS, and generate reports for IT staff.
 2. **Intrusion Detection and Response**: Develop a script that detects and responds to potential security threats, such as unusual login attempts or malware detection.
@@ -18,7 +18,7 @@ Here are some automation ideas that can make life easier in IT, cybersecurity, a
 4. **Security Information and Event Management (SIEM) Automation**: Automate SIEM system monitoring, alerting, and reporting to improve security incident detection and response.
 5. **Compliance Scanning and Reporting**: Develop a script that scans systems for compliance with regulatory requirements (e.g., HIPAA, PCI-DSS) and generates reports.
 
-**Network Automation**
+# **Network Automation**
 
 1. **Network Configuration Management**: Automate network device configuration backups, changes, and deployments.
 2. **Automated Network Monitoring**: Develop a script that monitors network performance, detects issues, and sends alerts to IT staff.
@@ -26,7 +26,7 @@ Here are some automation ideas that can make life easier in IT, cybersecurity, a
 4. **Automated DNS Management**: Create a system that automates DNS record creation, modification, and deletion.
 5. **Network Inventory Management**: Develop a script that tracks and updates network device inventory, including routers, switches, and firewalls.
 
-**DevOps Automation**
+# **DevOps Automation**
 
 1. **Continuous Integration and Continuous Deployment (CI/CD) Pipelines**: Automate build, test, and deployment processes for software applications.
 2. **Automated Testing**: Develop a script that automates unit testing, integration testing, and UI testing for software applications.
