@@ -1,26 +1,50 @@
-2025-03-02 03:15:17,555 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:15:18,247 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
-+                 Write-Log "Invalid action for $username: $action" "ER ...
-+                                               ~~~~~~~~~~
-Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:55 char:37
-+         Write-Log "Error processing $username: $_" "ERROR"
-+                                     ~~~~~~~~~~
-Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
-    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
-    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
- 
+2025-03-02 03:18:59,370 - INFO - Monitoring stopped by user.
+2025-03-02 03:19:03,194 - INFO - Starting local user sync monitoring... CSV path: ..\input\users.csv
+2025-03-02 03:19:20,632 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:19:21,434 - INFO - PowerShell output: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+INFO - Using CSV path: 
+INFO - User sync process completed.
 
-2025-03-02 03:15:18,247 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:15:19,021 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
-+                 Write-Log "Invalid action for $username: $action" "ER ...
-+                                               ~~~~~~~~~~
-Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:55 char:37
-+         Write-Log "Error processing $username: $_" "ERROR"
-+                                     ~~~~~~~~~~
-Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
-    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
-    + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
+2025-03-02 03:19:21,434 - ERROR - PowerShell errors: Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
++ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+ 
+ConvertFrom-StringData : Data line '[SETTINGS]' is not in 'name=value' format. 
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:15 char:68
++ ... t -Path "$PSScriptRoot\..\config\config.ini" | ConvertFrom-StringData
++                                                    ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : InvalidOperation: (:) [ConvertFrom-StringData], PSInvalidOperationException
+    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.ConvertFromStringDataCommand
+ 
+Test-Path : Cannot bind argument to parameter 'Path' because it is null.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:17 char:21
++ if (-not (Test-Path $csvPath)) {
++                     ~~~~~~~~
+    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
+    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
+ 
+Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
++ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+ 
+Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
++ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+ 
+Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
++ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
++                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OpenError: (:) [Out-File], IOException
+    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
  
 
