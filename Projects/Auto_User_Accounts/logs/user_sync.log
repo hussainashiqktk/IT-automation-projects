@@ -10,3 +10,8 @@
 2025-03-02 03:04:48,966 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
 2025-03-02 03:04:49,695 - INFO - PowerShell script executed successfully: 
 2025-03-02 03:06:27,457 - INFO - Monitoring stopped by user.
+2025-03-02 03:07:08,892 - INFO - Starting local user sync monitoring...
+2025-03-02 03:07:30,155 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:07:30,953 - INFO - PowerShell script executed successfully: 
+2025-03-02 03:07:30,953 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:07:32,117 - INFO - PowerShell script executed successfully: 
