@@ -1,29 +1,34 @@
-param (
-    [Parameter(Mandatory=$true)]
-    [string]$CsvPath
-)
-
 # Load helper functions
 . "$PSScriptRoot\utils.ps1"
 
-# Log function outputs to console (Python handles file logging)
+# Log function outputs to console (Python will handle file logging)
 function Write-Log {
     param ($Message, $Level = "INFO")
     Write-Host "$Level - $Message"
 }
 
-# Start script
+# Load config
 Write-Log "Script started from: $PSScriptRoot"
-Write-Log "Using CSV path: $CsvPath"
-
-if (-not (Test-Path $CsvPath)) {
-    Write-Log "CSV file not found at: $CsvPath" "ERROR"
+$configPath = "$PSScriptRoot\..\config\config.ini"
+if (-not (Test-Path $configPath)) {
+    Write-Log "Config file not found at: $configPath" "ERROR"
     exit 1
 }
+$config = Get-Content -Path $configPath | Where-Object { $_ -match '=' } | ConvertFrom-StringData
+$csvPath = $config.csv_path
+if (-not $csvPath) {
+    Write-Log "CSV path not defined in config.ini" "ERROR"
+    exit 1
+}
+if (-not (Test-Path $csvPath)) {
+    Write-Log "CSV file not found at: $csvPath" "ERROR"
+    exit 1
+}
+Write-Log "Using CSV path: $csvPath"
 
 # Import CSV and process each row
 try {
-    $users = Import-Csv -Path $CsvPath
+    $users = Import-Csv -Path $csvPath
     Write-Log "Found $($users.Count) users in CSV"
     if ($users.Count -eq 0) {
         Write-Log "No users to process (CSV might be empty or malformed)" "WARNING"
