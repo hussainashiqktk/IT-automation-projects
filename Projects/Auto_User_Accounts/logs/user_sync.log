@@ -1,24 +1,5 @@
-2025-03-02 03:04:16,163 - INFO - Starting local user sync monitoring...
-2025-03-02 03:04:41,453 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:04:42,518 - INFO - PowerShell script executed successfully: 
-2025-03-02 03:04:42,518 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:04:43,457 - INFO - PowerShell script executed successfully: 
-2025-03-02 03:04:44,167 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:04:45,347 - INFO - PowerShell script executed successfully: 
-2025-03-02 03:04:48,352 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:04:48,966 - INFO - PowerShell script executed successfully: 
-2025-03-02 03:04:48,966 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:04:49,695 - INFO - PowerShell script executed successfully: 
-2025-03-02 03:06:27,457 - INFO - Monitoring stopped by user.
-2025-03-02 03:07:08,892 - INFO - Starting local user sync monitoring...
-2025-03-02 03:07:30,155 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:07:30,953 - INFO - PowerShell script executed successfully: 
-2025-03-02 03:07:30,953 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:07:32,117 - INFO - PowerShell script executed successfully: 
-2025-03-02 03:12:46,314 - INFO - Monitoring stopped by user.
-2025-03-02 03:14:06,519 - INFO - Starting local user sync monitoring... CSV path: ..\input\users.csv
-2025-03-02 03:14:40,866 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:14:41,410 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
+2025-03-02 03:15:17,555 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:15:18,247 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
 +                 Write-Log "Invalid action for $username: $action" "ER ...
 +                                               ~~~~~~~~~~
 Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
@@ -30,8 +11,8 @@ Variable reference is not valid. ':' was not followed by a valid variable name c
     + FullyQualifiedErrorId : InvalidVariableReferenceWithDrive
  
 
-2025-03-02 03:14:41,411 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:14:41,777 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
+2025-03-02 03:15:18,247 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:15:19,021 - ERROR - Failed to execute PowerShell: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:51 char:47
 +                 Write-Log "Invalid action for $username: $action" "ER ...
 +                                               ~~~~~~~~~~
 Variable reference is not valid. ':' was not followed by a valid variable name character. Consider using ${} to delimit the name.
