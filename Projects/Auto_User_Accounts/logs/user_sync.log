@@ -70,3 +70,109 @@
 2025-03-02 03:51:22,740 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2025-03-02 03:51:22,742 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (jdoe:String) [Remove-LocalUser], UserNotFoundException
 2025-03-02 03:51:22,744 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:52:26,016 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:52:26,712 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:52:26,712 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:52:26,713 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:52:26,713 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:52:26,714 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:52:26,714 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:52:26,715 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:52:27,437 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:52:27,439 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:52:27,439 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:52:27,440 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:52:27,441 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:52:27,441 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:52:28,522 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:52:29,217 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:52:29,218 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:52:29,218 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:52:29,219 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:52:29,219 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:52:29,220 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:52:29,222 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:52:29,841 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:52:29,842 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:52:29,842 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:52:29,843 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:52:29,843 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:52:29,844 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:52:47,921 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:52:48,842 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:52:48,842 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:52:48,843 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:52:48,844 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:52:48,844 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:52:48,845 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:52:48,845 - ERROR - PowerShell error: New-LocalUser : Access denied.
+2025-03-02 03:52:48,846 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:52:48,846 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:52:48,847 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:52:48,847 - ERROR - PowerShell error: + CategoryInfo          : PermissionDenied: (hussain:LocalUser) [New-LocalUser], AccessDeniedException
+2025-03-02 03:52:48,848 - ERROR - PowerShell error: + FullyQualifiedErrorId : AccessDenied,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:52:48,849 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:52:49,814 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:52:49,815 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:52:49,816 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:52:49,817 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:52:49,818 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:52:49,820 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:52:49,820 - ERROR - PowerShell error: New-LocalUser : Access denied.
+2025-03-02 03:52:49,821 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:52:49,822 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:52:49,822 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:52:49,823 - ERROR - PowerShell error: + CategoryInfo          : PermissionDenied: (hussain:LocalUser) [New-LocalUser], AccessDeniedException
+2025-03-02 03:52:49,824 - ERROR - PowerShell error: + FullyQualifiedErrorId : AccessDenied,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:53:02,294 - INFO - Reading config from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\config\config.ini
+2025-03-02 03:53:02,295 - INFO - Resolved CSV path from 'input\users.csv' to: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:53:02,296 - INFO - Starting local user sync monitoring... CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:53:07,275 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:53:07,275 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:53:08,285 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:53:08,286 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:53:08,286 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:53:08,286 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:53:08,287 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:53:08,287 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:53:08,287 - INFO - PowerShell: Name    Enabled Description
+2025-03-02 03:53:08,287 - INFO - PowerShell: ----    ------- -----------
+2025-03-02 03:53:08,287 - INFO - PowerShell: hussain True
+2025-03-02 03:53:08,288 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:53:08,487 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:53:08,488 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:53:08,489 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:53:08,489 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:53:08,490 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:53:08,491 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:53:08,492 - ERROR - PowerShell error: New-LocalUser : Access denied.
+2025-03-02 03:53:08,492 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:53:08,493 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:53:08,496 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:53:08,498 - ERROR - PowerShell error: + CategoryInfo          : PermissionDenied: (hussain:LocalUser) [New-LocalUser], AccessDeniedException
+2025-03-02 03:53:08,499 - ERROR - PowerShell error: + FullyQualifiedErrorId : AccessDenied,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:53:08,500 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:53:09,376 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:53:09,377 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:53:09,377 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:53:09,377 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:53:09,378 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:53:09,378 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:53:09,380 - ERROR - PowerShell error: New-LocalUser : User hussain already exists.
+2025-03-02 03:53:09,381 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:53:09,383 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:53:09,384 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:53:09,385 - ERROR - PowerShell error: + CategoryInfo          : ResourceExists: (hussain:LocalUser) [New-LocalUser], UserExistsException
+2025-03-02 03:53:09,386 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserExists,Microsoft.PowerShell.Commands.NewLocalUserCommand
+2025-03-02 03:53:09,540 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:53:09,540 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:53:09,541 - INFO - PowerShell: INFO - Found  users in CSV
+2025-03-02 03:53:09,542 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:53:09,542 - INFO - PowerShell: INFO - Created local user: hussain
+2025-03-02 03:53:09,543 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:53:09,543 - ERROR - PowerShell error: New-LocalUser : Access denied.
+2025-03-02 03:53:09,543 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:4 char:5
+2025-03-02 03:53:09,544 - ERROR - PowerShell error: +     New-LocalUser -Name $Username -FullName $FullName -Password $secu ...
+2025-03-02 03:53:09,544 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:53:09,545 - ERROR - PowerShell error: + CategoryInfo          : PermissionDenied: (hussain:LocalUser) [New-LocalUser], AccessDeniedException
+2025-03-02 03:53:09,546 - ERROR - PowerShell error: + FullyQualifiedErrorId : AccessDenied,Microsoft.PowerShell.Commands.NewLocalUserCommand
