@@ -40,3 +40,33 @@
 2025-03-02 03:50:40,059 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 2025-03-02 03:50:40,060 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (hussain:String) [Remove-LocalUser], UserNotFoundException
 2025-03-02 03:50:40,061 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:51:19,925 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:51:21,480 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:51:21,480 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:51:21,481 - INFO - PowerShell: INFO - Found 2 users in CSV
+2025-03-02 03:51:21,481 - INFO - PowerShell: INFO - Processing user: jdoe with action: DELETE
+2025-03-02 03:51:21,482 - INFO - PowerShell: INFO - Deleted local user: jdoe
+2025-03-02 03:51:21,483 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:51:21,483 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:51:21,484 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:51:21,485 - ERROR - PowerShell error: Remove-LocalUser : User jdoe was not found.
+2025-03-02 03:51:21,486 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:51:21,487 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:51:21,489 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:51:21,489 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (jdoe:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:51:21,490 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
+2025-03-02 03:51:21,491 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:51:22,702 - INFO - PowerShell: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
+2025-03-02 03:51:22,705 - INFO - PowerShell: INFO - Using CSV path: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\input\users.csv
+2025-03-02 03:51:22,707 - INFO - PowerShell: INFO - Found 2 users in CSV
+2025-03-02 03:51:22,711 - INFO - PowerShell: INFO - Processing user: jdoe with action: DELETE
+2025-03-02 03:51:22,713 - INFO - PowerShell: INFO - Deleted local user: jdoe
+2025-03-02 03:51:22,716 - INFO - PowerShell: INFO - Processing user: hussain with action: CREATE
+2025-03-02 03:51:22,721 - INFO - PowerShell: ERROR - Error creating hussain: Cannot bind argument to parameter 'String' because it is null.
+2025-03-02 03:51:22,724 - INFO - PowerShell: INFO - User sync process completed.
+2025-03-02 03:51:22,726 - ERROR - PowerShell error: Remove-LocalUser : User jdoe was not found.
+2025-03-02 03:51:22,730 - ERROR - PowerShell error: At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\utils.ps1:19 char:5
+2025-03-02 03:51:22,738 - ERROR - PowerShell error: +     Remove-LocalUser -Name $Username
+2025-03-02 03:51:22,740 - ERROR - PowerShell error: +     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+2025-03-02 03:51:22,742 - ERROR - PowerShell error: + CategoryInfo          : ObjectNotFound: (jdoe:String) [Remove-LocalUser], UserNotFoundException
+2025-03-02 03:51:22,744 - ERROR - PowerShell error: + FullyQualifiedErrorId : UserNotFound,Microsoft.PowerShell.Commands.RemoveLocalUserCommand
