@@ -18,12 +18,15 @@ logging.basicConfig(filename=log_file, level=logging.INFO,
 # Load and resolve config
 config = configparser.ConfigParser()
 config_path = os.path.join(os.path.dirname(__file__), '..', 'config', 'config.ini')
+logging.info(f"Reading config from: {config_path}")
 if not os.path.exists(config_path):
     logging.error(f"Config file not found at: {config_path}")
     exit(1)
 config.read(config_path)
 try:
-    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', config['SETTINGS']['csv_path']))
+    relative_csv_path = config['SETTINGS']['csv_path']
+    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', relative_csv_path))
+    logging.info(f"Resolved CSV path from '{relative_csv_path}' to: {csv_path}")
 except KeyError:
     logging.error("Config file missing [SETTINGS] section or 'csv_path' key")
     exit(1)
@@ -41,7 +44,7 @@ class CSVHandler(FileSystemEventHandler):
                     "powershell.exe",
                     "-ExecutionPolicy", "Bypass",
                     "-File", os.path.join(script_dir, "main.ps1"),
-                    "-CsvPath", csv_path  # Pass resolved path as argument
+                    "-CsvPath", csv_path
                 ]
                 result = subprocess.run(ps_command, capture_output=True, text=True, check=True)
                 for line in result.stdout.splitlines():

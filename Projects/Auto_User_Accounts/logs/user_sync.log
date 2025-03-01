@@ -1,2 +1,3 @@
-2025-03-02 03:33:19,730 - ERROR - CSV file not found at: C:\Users\ghani\IT Support Automations\Projects\input\users.csv
-2025-03-02 03:36:24,772 - ERROR - CSV file not found at: C:\Users\ghani\IT Support Automations\Projects\input\users.csv
+2025-03-02 03:39:27,568 - INFO - Reading config from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\config\config.ini
+2025-03-02 03:39:27,570 - INFO - Resolved CSV path from '..\input\users.csv' to: C:\Users\ghani\IT Support Automations\Projects\input\users.csv
+2025-03-02 03:39:27,570 - ERROR - CSV file not found at: C:\Users\ghani\IT Support Automations\Projects\input\users.csv
