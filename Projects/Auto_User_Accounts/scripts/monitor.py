@@ -11,11 +11,11 @@ log_dir = os.path.join(os.path.dirname(__file__), '..', 'logs')
 os.makedirs(log_dir, exist_ok=True)
 log_file = os.path.join(log_dir, 'user_sync.log')
 
-# Setup logging (exclusive control)
+# Setup logging
 logging.basicConfig(filename=log_file, level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s', filemode='a')
 
-# Load config
+# Load and resolve config
 config = configparser.ConfigParser()
 config_path = os.path.join(os.path.dirname(__file__), '..', 'config', 'config.ini')
 if not os.path.exists(config_path):
@@ -23,9 +23,12 @@ if not os.path.exists(config_path):
     exit(1)
 config.read(config_path)
 try:
-    csv_path = config['SETTINGS']['csv_path']
+    csv_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', config['SETTINGS']['csv_path']))
 except KeyError:
     logging.error("Config file missing [SETTINGS] section or 'csv_path' key")
+    exit(1)
+if not os.path.exists(csv_path):
+    logging.error(f"CSV file not found at: {csv_path}")
     exit(1)
 script_dir = os.path.dirname(__file__)
 
@@ -37,7 +40,8 @@ class CSVHandler(FileSystemEventHandler):
                 ps_command = [
                     "powershell.exe",
                     "-ExecutionPolicy", "Bypass",
-                    "-File", os.path.join(script_dir, "main.ps1")
+                    "-File", os.path.join(script_dir, "main.ps1"),
+                    "-CsvPath", csv_path  # Pass resolved path as argument
                 ]
                 result = subprocess.run(ps_command, capture_output=True, text=True, check=True)
                 for line in result.stdout.splitlines():

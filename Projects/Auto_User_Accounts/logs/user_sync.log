@@ -1,18 +1,1 @@
-2025-03-02 03:22:54,993 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:22:55,726 - ERROR - Failed to execute PowerShell: ConvertFrom-StringData : parsing "..\input\users.csv" - Unrecognized escape sequence \i.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:17 char:76
-+ ... $configPath | Where-Object { $_ -match '=' } | ConvertFrom-StringData
-+                                                    ~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (:) [ConvertFrom-StringData], ArgumentException
-    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.ConvertFromStringDataCommand
- 
-
-2025-03-02 03:22:55,726 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:22:56,581 - ERROR - Failed to execute PowerShell: ConvertFrom-StringData : parsing "..\input\users.csv" - Unrecognized escape sequence \i.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:17 char:76
-+ ... $configPath | Where-Object { $_ -match '=' } | ConvertFrom-StringData
-+                                                    ~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : NotSpecified: (:) [ConvertFrom-StringData], ArgumentException
-    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.ConvertFromStringDataCommand
- 
-
+2025-03-02 03:33:19,730 - ERROR - CSV file not found at: C:\Users\ghani\IT Support Automations\Projects\input\users.csv
