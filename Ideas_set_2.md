@@ -1,0 +1,54 @@
+# 50 practical IT support automation ideas you could consider for your CV, tailored to real-life IT use cases:
+
+- Automated ticket triage using AI to categorize and prioritize support requests.
+- Script to reset user passwords across multiple systems simultaneously.
+- Automated disk space monitoring with email alerts for low storage.
+- Batch script to install software updates on multiple workstations.
+- PowerShell script to clean up temporary files on servers.
+- Automated backup verification tool to ensure data integrity.
+- Script to detect and remove orphaned user accounts in Active Directory.
+- Automated network device configuration backup tool.
+- Scheduled task to reboot servers during off-hours.
+- Tool to auto-generate hardware inventory reports from networked devices.
+- Script to monitor and restart failed services on servers.
+- Automated email response system for common IT queries.
+- Tool to sync user permissions across platforms (e.g., AD and cloud apps).
+- Script to detect and alert on unauthorized software installations.
+- Automated log file analyzer for recurring errors.
+- Tool to migrate user profiles to new machines seamlessly.
+- Script to enforce security policies (e.g., password complexity) across systems.
+- Automated patch management deployment tool.
+- Tool to map and monitor network printer statuses.
+- Script to automate VPN setup for remote employees.
+- Automated system health check dashboard with real-time updates.
+- Tool to bulk-create user accounts from a CSV file.
+- Script to detect and isolate malware-infected devices.
+- Automated cloud resource usage tracker with cost alerts.
+- Tool to auto-archive old emails based on retention policies.
+- Script to standardize desktop configurations across an organization.
+- Automated Wi-Fi performance analyzer and troubleshooter.
+- Tool to migrate data between cloud storage providers.
+- Script to reset hung applications without user intervention.
+- Automated SSL certificate renewal and deployment tool.
+- Tool to monitor and report on software license compliance.
+- Script to automate DNS record updates for dynamic IPs.
+- Automated user onboarding/offboarding workflow tool.
+- Tool to detect and fix common printer driver issues.
+- Script to automate database backups and test restores.
+- Automated bandwidth usage monitor with throttling capabilities.
+- Tool to schedule and deploy OS upgrades across devices.
+- Script to auto-configure email clients for new users.
+- Automated phishing email detector and quarantine tool.
+- Tool to consolidate and deduplicate helpdesk knowledge base articles.
+- Script to monitor CPU/memory usage and kill resource-heavy processes.
+- Automated VM snapshot and rollback tool for testing.
+- Tool to auto-update firewall rules based on threat intelligence feeds.
+- Script to automate IP address assignments in DHCP.
+- Automated remote desktop connection troubleshooter.
+- Tool to track and report on SLA compliance for IT tickets.
+- Script to auto-generate secure passwords for new accounts.
+- Automated tool to detect and repair corrupted system files.
+- Script to monitor and alert on expired user credentials.
+- Tool to automate the creation of virtual desktops for new hires.
+
+These ideas span a range of IT support scenarios—system administration, security, user management, and infrastructure—showing practical automation skills that could impress on a CV!
