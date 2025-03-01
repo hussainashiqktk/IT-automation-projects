@@ -11,14 +11,22 @@ log_dir = os.path.join(os.path.dirname(__file__), '..', 'logs')
 os.makedirs(log_dir, exist_ok=True)
 log_file = os.path.join(log_dir, 'user_sync.log')
 
-# Setup logging
+# Setup logging (exclusive control)
 logging.basicConfig(filename=log_file, level=logging.INFO,
-                    format='%(asctime)s - %(levelname)s - %(message)s')
+                    format='%(asctime)s - %(levelname)s - %(message)s', filemode='a')
 
 # Load config
 config = configparser.ConfigParser()
-config.read(os.path.join(os.path.dirname(__file__), '..', 'config', 'config.ini'))
-csv_path = config['SETTINGS']['csv_path']
+config_path = os.path.join(os.path.dirname(__file__), '..', 'config', 'config.ini')
+if not os.path.exists(config_path):
+    logging.error(f"Config file not found at: {config_path}")
+    exit(1)
+config.read(config_path)
+try:
+    csv_path = config['SETTINGS']['csv_path']
+except KeyError:
+    logging.error("Config file missing [SETTINGS] section or 'csv_path' key")
+    exit(1)
 script_dir = os.path.dirname(__file__)
 
 class CSVHandler(FileSystemEventHandler):
@@ -26,16 +34,19 @@ class CSVHandler(FileSystemEventHandler):
         if event.src_path.endswith('users.csv'):
             logging.info(f"Detected update to CSV file: {event.src_path}")
             try:
-                # Run PowerShell with explicit path and execution policy bypass
                 ps_command = [
                     "powershell.exe",
                     "-ExecutionPolicy", "Bypass",
                     "-File", os.path.join(script_dir, "main.ps1")
                 ]
                 result = subprocess.run(ps_command, capture_output=True, text=True, check=True)
-                logging.info(f"PowerShell output: {result.stdout}")
+                for line in result.stdout.splitlines():
+                    if line.strip():
+                        logging.info(f"PowerShell: {line.strip()}")
                 if result.stderr:
-                    logging.error(f"PowerShell errors: {result.stderr}")
+                    for line in result.stderr.splitlines():
+                        if line.strip():
+                            logging.error(f"PowerShell error: {line.strip()}")
             except subprocess.CalledProcessError as e:
                 logging.error(f"Failed to execute PowerShell: {e.stderr}")
 

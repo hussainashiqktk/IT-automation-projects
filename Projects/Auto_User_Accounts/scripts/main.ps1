@@ -1,19 +1,25 @@
 # Load helper functions
 . "$PSScriptRoot\utils.ps1"
 
-# Setup logging
-$logPath = "$PSScriptRoot\..\logs\user_sync.log"
+# Log function outputs to console (Python will handle file logging)
 function Write-Log {
     param ($Message, $Level = "INFO")
-    $timestamp = (Get-Date).ToString('yyyy-MM-dd HH:mm:ss')
-    "$timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
-    Write-Host "$Level - $Message"  # Output to console for subprocess capture
+    Write-Host "$Level - $Message"
 }
 
 # Load config
 Write-Log "Script started from: $PSScriptRoot"
-$config = Get-Content -Path "$PSScriptRoot\..\config\config.ini" | ConvertFrom-StringData
+$configPath = "$PSScriptRoot\..\config\config.ini"
+if (-not (Test-Path $configPath)) {
+    Write-Log "Config file not found at: $configPath" "ERROR"
+    exit 1
+}
+$config = Get-Content -Path $configPath | Where-Object { $_ -match '=' } | ConvertFrom-StringData
 $csvPath = $config.csv_path
+if (-not $csvPath) {
+    Write-Log "CSV path not defined in config.ini" "ERROR"
+    exit 1
+}
 if (-not (Test-Path $csvPath)) {
     Write-Log "CSV file not found at: $csvPath" "ERROR"
     exit 1

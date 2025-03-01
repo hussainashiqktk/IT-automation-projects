@@ -1,50 +1,18 @@
-2025-03-02 03:18:59,370 - INFO - Monitoring stopped by user.
-2025-03-02 03:19:03,194 - INFO - Starting local user sync monitoring... CSV path: ..\input\users.csv
-2025-03-02 03:19:20,632 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
-2025-03-02 03:19:21,434 - INFO - PowerShell output: INFO - Script started from: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts
-INFO - Using CSV path: 
-INFO - User sync process completed.
-
-2025-03-02 03:19:21,434 - ERROR - PowerShell errors: Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
-+ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
-+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OpenError: (:) [Out-File], IOException
-    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
- 
-ConvertFrom-StringData : Data line '[SETTINGS]' is not in 'name=value' format. 
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:15 char:68
-+ ... t -Path "$PSScriptRoot\..\config\config.ini" | ConvertFrom-StringData
+2025-03-02 03:22:54,993 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:22:55,726 - ERROR - Failed to execute PowerShell: ConvertFrom-StringData : parsing "..\input\users.csv" - Unrecognized escape sequence \i.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:17 char:76
++ ... $configPath | Where-Object { $_ -match '=' } | ConvertFrom-StringData
 +                                                    ~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : InvalidOperation: (:) [ConvertFrom-StringData], PSInvalidOperationException
-    + FullyQualifiedErrorId : InvalidOperation,Microsoft.PowerShell.Commands.ConvertFromStringDataCommand
+    + CategoryInfo          : NotSpecified: (:) [ConvertFrom-StringData], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.ConvertFromStringDataCommand
  
-Test-Path : Cannot bind argument to parameter 'Path' because it is null.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:17 char:21
-+ if (-not (Test-Path $csvPath)) {
-+                     ~~~~~~~~
-    + CategoryInfo          : InvalidData: (:) [Test-Path], ParameterBindingValidationException
-    + FullyQualifiedErrorId : ParameterArgumentValidationErrorNullNotAllowed,Microsoft.PowerShell.Commands.TestPathCommand
- 
-Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
-+ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
-+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OpenError: (:) [Out-File], IOException
-    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
- 
-Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
-+ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
-+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OpenError: (:) [Out-File], IOException
-    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
- 
-Out-File : The process cannot access the file 'C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\logs\user_sync.log' because it is being used by another process.
-At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:9 char:40
-+ ... $timestamp - $Level - $Message" | Out-File -FilePath $logPath -Append
-+                                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    + CategoryInfo          : OpenError: (:) [Out-File], IOException
-    + FullyQualifiedErrorId : FileOpenFailure,Microsoft.PowerShell.Commands.OutFileCommand
+
+2025-03-02 03:22:55,726 - INFO - Detected update to CSV file: C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\..\input\users.csv
+2025-03-02 03:22:56,581 - ERROR - Failed to execute PowerShell: ConvertFrom-StringData : parsing "..\input\users.csv" - Unrecognized escape sequence \i.
+At C:\Users\ghani\IT Support Automations\Projects\Auto_User_Accounts\scripts\main.ps1:17 char:76
++ ... $configPath | Where-Object { $_ -match '=' } | ConvertFrom-StringData
++                                                    ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [ConvertFrom-StringData], ArgumentException
+    + FullyQualifiedErrorId : System.ArgumentException,Microsoft.PowerShell.Commands.ConvertFromStringDataCommand
  
 
